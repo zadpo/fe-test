@@ -5,7 +5,6 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { ProfileIcon } from "../icon/profile";
 import { WalletIcon } from "../icon/wallet";
-import Link from "next/link";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
