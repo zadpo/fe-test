@@ -12,7 +12,7 @@ interface Props {
 const GameCard: React.FC<Props> = ({ game, isFavorite, onToggleFavorite }) => {
   return (
     <div className="relative flex flex-col items-center ">
-      <div className="relative w-[130px] h-[115px]">
+      <div className="relative w-[100px] h-[100px]">
         <Image src={game.img} alt={game.name} layout="fill" objectFit="cover" className="rounded-lg" />
         <button
           onClick={() => onToggleFavorite(game.id)}

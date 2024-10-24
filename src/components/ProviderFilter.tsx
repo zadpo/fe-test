@@ -49,7 +49,6 @@ export default function ProviderFilter({ selectedProvider, onSelectProvider }: P
           {providers.map((provider) => (
             <li
               key={provider.name}
-              role="option"
               className=" hover:bg-gray-100 cursor-pointer flex items-center justify-center bg-[#F2F2FA] rounded-lg"
               onClick={() => handleSelectProvider(provider.name)}
             >

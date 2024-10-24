@@ -25,7 +25,7 @@ export const useGames = () => {
         const fetchedGames = await fetchGames();
         setGames(fetchedGames);
         setLoading(false);
-      } catch (err) {
+      } catch {
         setError("Failed to load games");
         setLoading(false);
       }

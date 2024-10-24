@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { ProfileIcon } from "../icon/profile";
 import { WalletIcon } from "../icon/wallet";
+import Link from "next/link";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +26,7 @@ const Header: React.FC = () => {
                 <Menu className="h-6 w-6 text-[#00A6FF]" aria-hidden="true" />
               )}
             </button>
-            <a href="#" className="flex items-center">
+            <a href="/" className="flex items-center">
               <Image src="/images/logo.png" alt="Logo" width={92} height={20} />
             </a>
           </div>
@@ -51,9 +52,9 @@ const Header: React.FC = () => {
           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
             <div className="pt-5 pb-6 px-5">
               <div className="flex items-center justify-between">
-                <div>
-                  <h1>FUN88</h1>
-                </div>
+                <a href="/" className="flex items-center">
+                  <Image src="/images/logo.png" alt="Logo" width={92} height={20} />
+                </a>
                 <div className="-mr-2">
                   <button
                     type="button"

@@ -48,7 +48,7 @@ const Banner: React.FC = () => {
         ))}
       </div>
       <div className="absolute -bottom-6 left-4 ">
-        <p className="flex items-center gap-1 text-blue-500">
+        <p className="flex items-center gap-1 text-blue-500 text-xs">
           <BellIcon />
           ¡FELICIDADES artxxxxipa! GANADOR DESTACADO
         </p>
